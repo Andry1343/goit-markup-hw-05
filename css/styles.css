@@ -26,13 +26,15 @@ body {
   text-decoration: none;
 }
 
-/* .botom-border:after {
- text-decoration: overline;
-  text-decoration: 1px solid #2196f3;
-  border-bottom: #2196f3;
-  background: #2196F3;
+.botom-border::after {
+  content: "";
+  display: block;
+  background-color: #2196F3;
   border-radius: 2px;
-  } */
+  height: 4px;
+  position: relative;
+  bottom: -37px;
+  }
 
 /*-------Reset-------*/
 
