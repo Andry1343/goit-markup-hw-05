@@ -55,7 +55,7 @@
   <section class="effective-solutions">
     <div class="container">
       <h1 class="effective-solutions-h1">Эффективные решения для вашего бизнеса</h1>
-      <button class="order-service-button" name="button">Заказать услугу</button>
+      <button class="order-service-button  data-modal-open" data-modal-open name="button">Заказать услугу</button>
     </div>
   </section>
 
@@ -99,15 +99,26 @@
     <div class="container">
       <h2 class="what-are-we-doing-h2">Чем мы занимаемся</h2>
       <ul class="what-are-we-doing-list list">
+        
         <li class="what-are-we-doing-items">
-          <img src="./img/box1.jpg" alt="box1" width="370" />
+            <div class="box1"><img src="./img/box1.jpg" alt="box1" width="370" /></div>
+            <div class="texontop-div"><p class="texonbottom">Десктопные приложения</p></div>   
         </li>
-        <li class="what-are-we-doing-items">
-          <img src="./img/box2.jpg" alt="box2" width="370" />
+      
+        
+          <li class="what-are-we-doing-items">
+            <div><img src="./img/box2.jpg" alt="box2" width="370" /></div>
+            <div class="texontop-div"><p class="texonbottom">Мобильные приложения</p></div>
         </li>
-        <li class="what-are-we-doing-items">
-          <img src="./img/box3.jpg" alt="box3" width="370" />
+      
+        
+           <li class="what-are-we-doing-items">
+            <div><img src="./img/box3.jpg" alt="box3" width="370" /></div>
+            <div class="texontop-div"><p class="texonbottom">Дизайнерские решения</p></div>
+          
         </li>
+      
+       
       </ul>
     </div>
   </section>
@@ -373,6 +384,13 @@
       </div>
     </div>
   </footer>
+
+  <div class="backdrop is-hidden" data-modal>
+    <div class="modal">
+      <button type="button" class="modal-close-btn" data-modal-close></button>
+    </div>
+  </div>
+
   <script src="./js/modal.js"></script>
 </body>
 

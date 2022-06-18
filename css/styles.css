@@ -379,7 +379,35 @@ height: 120px;
 
 .what-are-we-doing-list {
   display: flex;
+  position: relative;
 }
+
+
+
+.texonbottom {
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 700;
+font-size: 14px;
+line-height: 1.14;
+text-align: center;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+color: #FFFFFF;
+}
+
+.texontop-div {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 370px;
+  height: 70px;
+  background: rgba(47, 48, 58, 0.8);
+  bottom: 0;
+}
+
+
 
 .what-are-we-doing-items {
   margin-right: 30px;
@@ -495,9 +523,6 @@ padding-bottom: 30px;
   justify-content: center;
 }
 
-/* .regular-customers-li {
-  display: block;
-} */
 
 .regular-customers-h3 {
   font-family: 'Roboto';
@@ -546,7 +571,7 @@ padding-bottom: 30px;
   transition-timing-function: var(--transition-timing-function);
 }
 
-/* border: 1px solid #2196F3; */
+
 
 /*Футер*/
 
@@ -660,7 +685,6 @@ padding-bottom: 30px;
       align-items: center;
     }
     
-    /* .footer-our-team-soc-link:first-child {margin-left: 0px;} */
     
     /*Это li*/
     .footer-our-team-soc-item{
@@ -771,20 +795,64 @@ padding-bottom: 30px;
   display: block;
 }
 
+
+.text-under-img {
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 1.56;
+letter-spacing: 0.03em;
+color: #FFFFFF;
+}
+
+.text-under-img-div {
+  position: absolute;
+  top: 0;
+  left: 0;
+    width: 100%;
+    height: 100%;
+  
+    padding: 63px 24px;
+    background-color: rgba(33, 150, 243, 0.9);
+  
+    transform: translateY(101%);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+   
+  }
+
+  /* .card-foto {  } */
+  
+  /* .project-items {overflow: hidden;} */
+ 
+
+  
+  
+
+  .project-list .project-list-a:hover .text-under-img-div,
+  .project-list .project-list-a:focus .text-under-img-div
+  {
+    transform: translateY(0);
+  }
+
+ 
+  
+  .project-list, .card-thumb {
+    position: relative;
+    overflow: hidden;
+  }
+ 
+
+
 .project-list-a:hover,
 .project-list-a:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
   cursor: pointer;
   transition-delay: var(--transition-delay);
-  transition-timing-function: var(--transition-timing-function);
+  transition-timing-function: var(--transition-timing-function); 
 }
 
-/* .project-list-a {
 
-} */
-
-
-/*border: 1px solid #eeeeee;*/
 
 .project-items:nth-last-child(-2n + 3) {
   margin-bottom: 0px;
@@ -830,4 +898,64 @@ img {
   border-left: 1px solid #eeeeee;
   border-right: 1px solid #eeeeee;
   border-bottom: 1px solid #eeeeee;
+  
+}
+
+/* Модальное Окно */
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.2);
+  transition: opacity 250ms linear, visibility 250ms linear;
+}
+
+.backdrop.is-hidden .modal {
+  transform: translate(-50%, -50%) scale(0) rotate(-360deg);
+}
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1) rotate(0);
+  width: 530px;
+  min-height: 580px;
+  background: #FFFFFF;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  transition: transform 250ms linear;
+}
+
+.modal-close-btn {
+  position: absolute;
+  right: 8px;
+  top: 8px;
+  width: 30px;
+  height: 30px;
+  background: #FFFFFF;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  cursor: pointer;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+
+.modal-close-btn {
+  background-image: url(../img/closebtn.svg);
+  }
+
+
+  .is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.no-scroll {
+  overflow: hidden;
 }
