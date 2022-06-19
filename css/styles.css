@@ -13,6 +13,8 @@ body {
   --transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+
+
 .list {
   list-style: none;
 }
@@ -62,6 +64,7 @@ ul {
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
+  
 }
 
 
@@ -210,8 +213,6 @@ ul {
   justify-content: center;
   }
   
-  /* .icon-envelope-our-team-soc-link,
-  .icon-smartphone-our-team-soc-link:first-child {margin-left: 0px;} */
   
   /*Это li*/
   .icon-envelope-our-team-soc-item, 
@@ -284,7 +285,7 @@ ul {
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
-  line-height: 1.88;
+  line-height: 1.87;
   align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
@@ -804,54 +805,47 @@ font-size: 18px;
 line-height: 1.56;
 letter-spacing: 0.03em;
 color: #FFFFFF;
+
 }
 
 .text-under-img-div {
+  
   position: absolute;
   top: 0;
   left: 0;
-    width: 100%;
-    height: 100%;
+  width: 100%;
+  height: 100%;
   
     padding: 63px 24px;
     background-color: rgba(33, 150, 243, 0.9);
-  
-    transform: translateY(101%);
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transform: translateY(101%);
+    
    
   }
 
   /* .card-foto {  } */
   
   /* .project-items {overflow: hidden;} */
- 
-
-  
-  
 
   .project-list .project-list-a:hover .text-under-img-div,
   .project-list .project-list-a:focus .text-under-img-div
   {
     transform: translateY(0);
   }
-
- 
   
-  .project-list, .card-thumb {
+   .card-thumb {
     position: relative;
     overflow: hidden;
   }
- 
 
-
-.project-list-a:hover,
-.project-list-a:focus {
+  .project-list-a:hover,
+  .project-list-a:focus  {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
   cursor: pointer;
   transition-delay: var(--transition-delay);
   transition-timing-function: var(--transition-timing-function); 
 }
-
 
 
 .project-items:nth-last-child(-2n + 3) {
@@ -897,9 +891,9 @@ img {
   padding: 20px 24px;
   border-left: 1px solid #eeeeee;
   border-right: 1px solid #eeeeee;
-  border-bottom: 1px solid #eeeeee;
-  
+  border-bottom: 1px solid #eeeeee;  
 }
+
 
 /* Модальное Окно */
 
